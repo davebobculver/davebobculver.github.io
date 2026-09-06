@@ -1,0 +1,10 @@
+# Editor settings
+.vscode/
+
+# Local reference material — not part of the site, do not publish
+notes/
+
+# OS / OneDrive cruft
+Thumbs.db
+desktop.ini
+.DS_Store

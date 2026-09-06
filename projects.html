@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects &middot; David Culver</title>
+<link rel="stylesheet" href="styles.css">
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html">David Culver</a>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="#">Personal</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="page-header">
+    <h2 class="section-heading">Projects</h2>
+    <p class="page-subtitle">
+      A selection of things I have built &mdash; what each one does, how it works,
+      and what I contributed.
+    </p>
+  </div>
+
+  <section class="project-list">
+
+    <!--
+      ===== HOW TO ADD A PROJECT =====
+      Copy one <article class="project"> block below and fill it in.
+
+      Image: drop the file in images/projects/ and replace the
+      <div class="project-image-placeholder"> with:
+
+        <img src="images/projects/your-file.png" alt="Short description" class="project-image">
+
+      Everything else is plain text you can edit directly.
+    -->
+
+    <article class="project">
+      <div class="project-media">
+       <img src="images/derivatives.png" alt="..." class="project-image">
+
+      </div>
+
+      <div class="project-body">
+        <div class="entry-header">
+          <h3>Continuous and Differentiable Neural Network Representations of the Surfzone Sea-Surface from Lidar Point Clouds</h3>
+          <span class="entry-dates">March 2024 &ndash; September 2026</span>
+        </div>
+        <p class="project-summary">
+          This project focused on applying a traditional neural network architecture to 
+          solving a novel oceanic sensing problem. Prior attempt of reconstructing 
+          sea surface lidar returns used traditional interpolation methods, and I adapted a methodology
+          to return continuous and differentiable representations using sinusoidal representation networks (SIREN)
+        </p>
+
+        <h4 class="project-label">How it works</h4>
+        <ul class="entry-bullets">
+          <li>We train a neural network to regress the sea surface from a set of lidar data</li>
+          <li>We implement a so-called "sinusoidal representation network" (SIREN) creating an implicit neural representation or neural field of the sea surface</li>
+          <li>We required a modification of the principaled SIREN initialization and used a standard Xavier normal initialization.</li>
+        </ul>
+
+        <h4 class="project-label">My contribution</h4>
+        <ul class="entry-bullets">
+          <li>I created the training pipeline, preprocessed the data, created the model architecture in custom PyTorch modules, evaluated the model, and documented the results.</li>
+          <li>In the documentation, I described the methodology, created figures, and led the work on the paper while collabarating with 2 proffersors who helped me along the research process.</li>
+        </ul>
+
+        <ul class="tag-list">
+          <li>Python</li>
+          <li>PyTorch</li>
+          <li>CUDA</li>
+        </ul>
+
+        <p class="project-links">
+          <a href="#" target="_blank" rel="noopener noreferrer">Code</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Paper</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-media">
+        <div class="project-image-placeholder">Project image</div>
+      </div>
+
+      <div class="project-body">
+        <div class="entry-header">
+          <h3>Project title</h3>
+          <span class="entry-dates">Month Year</span>
+        </div>
+        <p class="project-summary">
+          One or two sentences on what the project is and why it exists.
+        </p>
+
+        <h4 class="project-label">How it works</h4>
+        <ul class="entry-bullets">
+          <li>The core idea or method.</li>
+          <li>Key technical detail.</li>
+        </ul>
+
+        <h4 class="project-label">My contribution</h4>
+        <ul class="entry-bullets">
+          <li>What you personally built.</li>
+        </ul>
+
+        <ul class="tag-list">
+          <li>Tool</li>
+          <li>Library</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-media">
+        <div class="project-image-placeholder">Project image</div>
+      </div>
+
+      <div class="project-body">
+        <div class="entry-header">
+          <h3>Automatic Waffler &mdash; Phys 122 Class Project</h3>
+          <span class="entry-dates">Month Year</span>
+        </div>
+        <p class="project-summary">
+          One or two sentences on what the project is and why it exists.
+        </p>
+
+        <h4 class="project-label">How it works</h4>
+        <ul class="entry-bullets">
+          <li>The core idea or method.</li>
+        </ul>
+
+        <h4 class="project-label">My contribution</h4>
+        <ul class="entry-bullets">
+          <li>What you personally built.</li>
+        </ul>
+      </div>
+    </article>
+
+  </section>
+</main>
+
+</body>
+</html>

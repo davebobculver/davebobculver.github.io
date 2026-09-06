@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Experience &middot; David Culver</title>
+<link rel="stylesheet" href="styles.css">
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html">David Culver</a>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="#">Personal</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="detail-section">
+    <h2 class="section-heading">Research Experience</h2>
+
+ <div class="detail-entry">
+      <div class="entry-header">
+        <h4>Undergraduate Research Assistant &mdash; PI: Matthias Morzfeld</h4>
+        <span class="entry-dates">March 2024 &ndash; September 2026</span>
+      </div>
+      <p class="entry-location">Scripps Institution of Oceanography, University of California, San Diego, CA</p>
+      <ul class="entry-bullets">
+        <li>Focused on constructing a lightweight ($5 \times 10^5$ parameters) coordinate based Neural Network for implicit
+        neural representations (or neural fields) to work under computational constraints imposed under
+        hardware limits (working on NVIDIA GTX 1650 GPUs w/ 4Gb of vram each).
+        </li>
+        <li>Added derivative-based regularization to the training objective, establishing whether a physics-informed
+neural network (PINN) formulation improved accuracy under the model's size constraints.
+</li>
+        <li>Moved training to GPU using PyTorch/CUDA for an 5x throughput gain, submitting long-running jobs to
+the SIO compute cluster via SLURM.</li>
+        <li>Gave successful presentations to groups of various levels of scientific machine learning knowledge, from
+nontechnical groups to professional groups. </li>
+<li> First author on a paper made in collaboration with Dr. Morzfeld. (Journal: AMS JTECH (Submitted), Paper: Continuous and Differentiable Neural Network Representations of the
+Surfzone Sea-Surface from Lidar Point Clouds)</li>
+      </ul>
+    </div>
+
+
+
+    <div class="detail-entry">
+      <div class="entry-header">
+        <h4>Undergraduate Research Assistant &mdash; PI: Falk Feddersen</h4>
+        <span class="entry-dates">January 2025 &ndash; September 2026</span>
+      </div>
+      <p class="entry-location">Scripps Institution of Oceanography, University of California, San Diego, CA</p>
+      <ul class="entry-bullets">
+        <li>Extended the coordinate-based neural field framework (developed under Dr. Morzfeld) to nearshore breaking waves, fitting LiDAR scans collected from the sea surface in the nearshore region.</li>
+        <li>Modeled up to 60 s of LiDAR data ( $\approx 10^7$ points) to within the sensors' tolerance (6 cm), producing a
+continuous, differentiable sea surface that can be evaluated at arbitrary space-time coordinates rather
+than only where sampled</li>
+        <li>Recovered summary wave statistics, including wave speed and wave height, directly from the learned
+model in agreement with established analytical methods.</li>
+        <li>First-author paper in collaboration with Matthias Morzfeld and Falk Feddersen, and presented
+the results to an audience of professional oceanographers.
+</li>
+      </ul>
+    </div>
+
+   
+    <div class="subsection">
+      <h3>Paper</h3>
+      <div class="detail-entry">
+        <div class="entry-header">
+          <h4>Continuous and Differentiable Neural Network Representations of the
+Surfzone Sea-Surface from Lidar Point Clouds</h4>
+        </div>
+        <ul class="entry-bullets">
+          <li>Journal &mdash; AMS JTECH (Submitted)</li>
+          <li>Authors &mdash; David Culver, Matthias Morzfeld, Falk Feddersen</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3>Talks</h3>
+
+      <div class="detail-entry">
+        <div class="entry-header">
+          <h4>Differentiable Sea Surface Representations from Neural Network Modeling LiDAR Point Clouds
+</h4>
+          <span class="entry-dates">May 2026</span>
+        </div>
+        <p class="entry-location">Undergraduate Research Conference at UCSD</p>
+      </div>
+
+      <div class="detail-entry">
+        <div class="entry-header">
+          <h4>Using Neural Networks as Functional Representation of the Sea Surface from a set of irregular LiDAR 
+</h4>
+          <span class="entry-dates">October 2025</span>
+        </div>
+        <p class="entry-location">ROcky Shore: eXperiment and SImulations (ROXSI) Conference</p>
+      </div>
+
+      <div class="detail-entry">
+        <div class="entry-header">
+          <h4>Functional Representation of the Sea Surface using Neural Networks
+</h4>
+          <span class="entry-dates">September 2025</span>
+        </div>
+        <p class="entry-location">Scripps Student Symposium</p>
+      </div>
+
+      <div class="detail-entry">
+        <div class="entry-header">
+          <h4>Using neural networks for functional representations of nearshore ocean waves
+</h4>
+          <span class="entry-dates">July 2025</span>
+        </div>
+        <p class="entry-location">CaCAO &mdash; Computation and Optimization Group at UCSD</p>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3>Groups</h3>
+      <ul class = "entry-bullets">
+        <li> <a href="https://cacao.ucsd.edu/" target="_blank" rel="noopener noreferrer">CaCAO</a>: Chaos, Computation,  Analysis and Optimization &mdash; Group at UCSD</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3>Technical Proficiency</h3>
+      <ul class="tag-list">
+        <li>Python</li>
+        <li>GPU-Accelerated Python</li>
+        <li>Bash</li>
+        <li>MATLAB</li>
+        <li>Mathematica</li>
+        <li>LaTeX</li>
+        <li>PyTorch</li>
+        <li>TensorFlow / Keras</li>
+        <li>Scikit-learn</li>
+        <li>NumPy</li>
+      </ul>
+    </div>
+  </section>
+
+
+  
+  <section class="detail-section">
+    <h2 class="section-heading">Education</h2>
+
+    <div class="detail-entry">
+      <div class="entry-header">
+        <h4>University of California, San Diego &mdash; Provost's Honors</h4>
+        <span class="entry-dates">Graduated June 2026</span>
+      </div>
+      <ul class="entry-bullets">
+        <li>Physics, B.S. &mdash; Major GPA: 3.887</li>
+        <li>Mathematics, B.S. &mdash; Major GPA: 3.976</li>
+      </ul>
+      <p>
+        I graduated with a double major from UCSD in math and physics. I emphasized taking
+        classes which focused on theory, because I enjoy the fundamental reasons why math
+        methods have been developed.
+      </p>
+    </div>
+  </section>
+
+
+  <section class="detail-section">
+    <h2 class="section-heading">Leadership and Other Experience</h2>
+
+    <div class="detail-entry">
+      <div class="entry-header">
+        <h4>UCSD Men's Club Water Polo &mdash; Treasurer</h4>
+        <span class="entry-dates"> September 2023 &mdash; June 2026</span>
+      </div>
+      <ul class="entry-bullets">
+        <li>Managed financial records and budget planning for the water polo team</li>
+        <li>Organized team events and facilitated communication between players and coaching staff</li>
+        <li>Represented the team at university meetings and contributed to strategic planning</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="detail-entry">
+      <div class="entry-header">
+        <h4>Reader and Instructional Assistant &mdash; Class: Introduction to Ocean Waves</h4>
+        <span class="entry-dates"> March 2026 &mdash; June 2026</span>
+      </div>
+      <ul class="entry-bullets">
+        <li>Held weekly office hours for students, and communicated with the professor weekly.</li>
+        <li>Assisted in grading assignments and providing feedback to students.</li>
+      </ul>
+    </div>
+  </section>
+
+    <div class="detail-entry">
+      <div class="entry-header">
+        <h4>Reading Group under Dr. David Jekel &mdash; PCA and Random Matrix Representation Theory</h4>
+        <span class="entry-dates"> March 2023 &mdash; June 2023</span>
+      </div>
+      <ul class="entry-bullets">
+        <li>Read rigorous notes on the underlying theory of PCA and met weekly with the group.</li>
+        <li>Demonstrated to the group how to apply the theory to practical problems.</li>
+      </ul>
+    </div>
+  </section>
+
+
+</main>
+
+</body>
+</html>
