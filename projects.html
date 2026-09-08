@@ -91,7 +91,10 @@
         </ul>
 
         <p class="project-links">
-          <a href="#" target="_blank" rel="noopener noreferrer">Code</a>
+          <a href="https://davebobculver.github.io/siren-sea-surface/" target="_blank" rel="noopener noreferrer">Paper</a>
+
+
+          <a href="https://github.com/davebobculver/siren-sea-surface-code" target="_blank" rel="noopener noreferrer">Code</a>
 
         </p>
       </div>
@@ -99,35 +102,49 @@
 
     <article class="project">
       <div class="project-media">
-        <div class="project-image-placeholder">Project image</div>
+       <img src="images/classify.png" alt="..." class="project-image">
+
       </div>
+
 
       <div class="project-body">
         <div class="entry-header">
-          <h3>Project title</h3>
-          <span class="entry-dates">Month Year</span>
+          <h3>Medical Image CNN Classification</h3>
+          <span class="entry-dates">December 2025</span>
         </div>
         <p class="project-summary">
-          One or two sentences on what the project is and why it exists.
+          A group of classmates and I reproduced Eff-PCNet, an efficient CNN architecture for
+          medical image classification, to test whether its claims hold up under tight compute
+          limits. We built a lightweight version and benchmarked it against a standard
+          transfer-learning baseline across three medical image datasets.
         </p>
 
         <h4 class="project-label">How it works</h4>
         <ul class="entry-bullets">
-          <li>The core idea or method.</li>
-          <li>Key technical detail.</li>
+          <li>Our EffPCNet-Small splits channels across 3&times;3 depthwise, 1&times;K, K&times;1, and
+          identity branches to approximate a large receptive field cheaply, then stacks simplified
+          multi-branch blocks with squeeze-and-excitation.</li>
+          <li>We benchmarked it against a frozen EfficientNetV2-S transfer-learning baseline on
+          HAM10000, SkinCancer MNIST, and Chest X-ray Pneumonia, scoring accuracy, F1, and AUC.</li>
+          <li>At a fifth of the baseline's parameters (4.39M vs. 20.3M), it still beat it on both
+          skin-lesion datasets &mdash; SkinCancer accuracy rose from 0.64 to 0.85 &mdash; supporting
+          the paper's core efficiency claim.</li>
         </ul>
 
         <h4 class="project-label">My contribution</h4>
         <ul class="entry-bullets">
-          <li>What you personally built.</li>
+          <li>I built the lightweight EffPCNet-Small architecture and implemented the benchmarking framework.</li>
+          <li> I managed the project timeline, coordinated team progress, and created a team presentation.</li>
         </ul>
 
         <ul class="tag-list">
-          <li>Tool</li>
-          <li>Library</li>
+          <li>Python</li>
+          <li>TensorFlow</li>
+          <li>Keras</li>
         </ul>
 
         <p class="project-links">
+                    <a href="https://github.com/davebobculver/Phys_139_project/tree/main" target="_blank" rel="noopener noreferrer">Code</a>
           <a href="files/project-report-phys139.pdf" target="_blank" rel="noopener noreferrer">Project Report (PDF)</a>
         </p>
       </div>
@@ -135,8 +152,10 @@
 
     <article class="project">
       <div class="project-media">
-        <div class="project-image-placeholder">Project image</div>
+       <img src="images/Waffler.jpg" alt="..." class="project-image">
+
       </div>
+
 
       <div class="project-body">
         <div class="entry-header">
