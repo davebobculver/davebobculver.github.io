@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Projects &middot; David Culver</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <script>
   window.MathJax = {
@@ -24,8 +27,7 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="experience.html">Experience</a></li>
       <li><a href="projects.html">Projects</a></li>
-      <li><a href="#">Personal</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 </header>
@@ -41,21 +43,10 @@
 
   <section class="project-list">
 
-    <!--
-      ===== HOW TO ADD A PROJECT =====
-      Copy one <article class="project"> block below and fill it in.
-
-      Image: drop the file in images/projects/ and replace the
-      <div class="project-image-placeholder"> with:
-
-        <img src="images/projects/your-file.png" alt="Short description" class="project-image">
-
-      Everything else is plain text you can edit directly.
-    -->
 
     <article class="project">
       <div class="project-media">
-       <img src="images/derivatives.png" alt="..." class="project-image">
+       <img src="images/derivatives.png" alt="Four-panel figure of a modeled surfzone wave over a 20-metre patch: sea-surface elevation, gradient magnitude, Laplacian, and time derivative, each taken analytically from the trained network" class="project-image">
 
       </div>
 
@@ -102,7 +93,7 @@
 
     <article class="project">
       <div class="project-media">
-       <img src="images/classify.png" alt="..." class="project-image">
+       <img src="images/classify.png" alt="A paediatric chest X-ray with an arrow pointing to the two class labels, Normal and Pneumonia" class="project-image">
 
       </div>
 
@@ -116,14 +107,13 @@
           A group of classmates and I reproduced Eff-PCNet, an efficient CNN architecture for
           medical image classification, to test whether its claims hold up under tight compute
           limits. We built a lightweight version and benchmarked it against a standard
-          transfer-learning baseline across three medical image datasets.
+          transfer-learning baseline Eff-PCNet across three medical image datasets.
         </p>
 
         <h4 class="project-label">How it works</h4>
         <ul class="entry-bullets">
           <li>Our EffPCNet-Small splits channels across 3&times;3 depthwise, 1&times;K, K&times;1, and
-          identity branches to approximate a large receptive field cheaply, then stacks simplified
-          multi-branch blocks with squeeze-and-excitation.</li>
+          identity branches to approximate a large receptive field cheaply. This is the main claim from the original paper, which we reproduced in at a smaller scale.</li>
           <li>We benchmarked it against a frozen EfficientNetV2-S transfer-learning baseline on
           HAM10000, SkinCancer MNIST, and Chest X-ray Pneumonia, scoring accuracy, F1, and AUC.</li>
           <li>At a fifth of the baseline's parameters (4.39M vs. 20.3M), it still beat it on both
@@ -144,15 +134,16 @@
         </ul>
 
         <p class="project-links">
-                    <a href="https://github.com/davebobculver/Phys_139_project/tree/main" target="_blank" rel="noopener noreferrer">Code</a>
+
           <a href="files/project-report-phys139.pdf" target="_blank" rel="noopener noreferrer">Project Report (PDF)</a>
+          <a href="https://github.com/davebobculver/Phys_139_project/tree/main" target="_blank" rel="noopener noreferrer">Code</a>
         </p>
       </div>
     </article>
 
     <article class="project">
       <div class="project-media">
-       <img src="images/Waffler.jpg" alt="..." class="project-image">
+       <img src="images/Waffler.jpg" alt="The Automatic Waffler on a lab bench: a batter bowl mounted on aluminium extrusion above a brass solenoid valve, feeding a waffle iron, with a bottle of syrup and an oscilloscope alongside" class="project-image">
 
       </div>
 
@@ -160,21 +151,35 @@
       <div class="project-body">
         <div class="entry-header">
           <h3>Automatic Waffler &mdash; Phys 122 Class Project</h3>
-          <span class="entry-dates">Month Year</span>
+          <span class="entry-dates">March 2026</span>
         </div>
         <p class="project-summary">
-          One or two sentences on what the project is and why it exists.
+          The Automatic Waffler is better seen as a semi-automatic waffle making tool. It was created with an Amazon basic waffle iron, aluminum extrusion, plywood, custom 3d printed parts, a bench top power supple, and Arduino controlled electronics. The electronics consisted of 1 stepper motor (w/ motor shield), a solenoid valve, a power relay, a 10kg load cell, and a signal amplifier for the load cell. The load cell used Serial communication with my computer to sense how much better has been deposited, thus dispensing the perfect amount of batter for your waffle. (We won the class favorite prize!)
         </p>
 
         <h4 class="project-label">How it works</h4>
         <ul class="entry-bullets">
-          <li>The core idea or method.</li>
+          <li>I wrote code in C++ to both communicate with load cell and to power each electrical component. We used the onboard USB type-b connection to communicate with the Arduino.</li>
+
+          <li> The architecture of the contraption was designed in SolidWorks, which we referenced during construction. The 3d printed parts where also made in SolidWorks. </li>
         </ul>
 
         <h4 class="project-label">My contribution</h4>
         <ul class="entry-bullets">
-          <li>What you personally built.</li>
+          <li>I had one partner on this project, and I was the main source of inspiration. I made every part, wrote every line of code, and came up with each idea. My partner was a great asset during the documentation and construction, but the project was run by me.</li>
+          <li>  We only had a limited amount of electronics and resources, but I stretched out what we had and made the final project run in time for the presentation!</li>
         </ul>
+
+
+
+            <ul class="tag-list">
+          <li>C++</li>
+          <li>SolidWorks</li>
+        </ul>
+        <p class="project-links">
+  <a href="files/waffler.pdf" target="_blank" rel="noopener noreferrer">Project Report (PDF)</a>
+    </p>
+
       </div>
     </article>
 
