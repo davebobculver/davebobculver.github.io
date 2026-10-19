@@ -83,10 +83,6 @@ main a:hover {
   text-decoration: none;
 }
 
-.brand::before {
-  content: "~/";
-  color: var(--accent);
-}
 
 .nav-links {
   display: flex;
